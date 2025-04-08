@@ -11,7 +11,8 @@ def directory_list(name):
             directory_list(item)    
         else:
             if fnmatch.fnmatch(os.path.basename(f"{item}"),"*.txt"):
-                with open(path,"wt") as f:
-                    print(os.path.basename(f"{item}"))
-                    f.writelines(os.path.basename(f"{item}"))
+                with open(item,"rt") as f1:
+                    lines = f1.readlines()
+                    with open(path, "at") as f2:
+                        f2.writelines(lines)
 directory_list(name)
