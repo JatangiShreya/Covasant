@@ -1,7 +1,7 @@
 
 import os.path
 import glob
-name=r"C:\Users\Shreya\check"
+name=r"."
 max_size=0
 file_name=""
 def directory_list(name):
