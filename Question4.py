@@ -2,8 +2,8 @@ import os.path
 import glob
 from glob import fnmatch
 file_name=""
-name=r"C:\Users\Shreya\check"
-path=r"C:\Users\Shreya\demo.txt"
+name=r"."
+path=r".\demo.txt"
 def directory_list(name):
     lst=glob.glob(f"{name}"+"\\*")
     for item in lst:
