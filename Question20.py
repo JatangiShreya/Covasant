@@ -134,6 +134,10 @@ gr.head(1)
 
 # 3. Does it depend on pclass?
 
+gr=df2.groupby('pclass').agg({'pclass': 'sum','survived':'sum',})
+gr['percentage']=gr['survived']/gr['pclass']
+gr
+
 #  4. can we see % of survival of each gender and pclass 
 
 # In[43]:
