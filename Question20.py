@@ -132,7 +132,7 @@ gr.sort_values('survived',ascending=False)
 gr.head(1)
 
 
-# 3. Does it depend on pclass?:Yes
+# 3. Does it depend on pclass?
 
 #  4. can we see % of survival of each gender and pclass 
 
